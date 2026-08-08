@@ -1,0 +1,229 @@
+==========================================================
+           ASSIGNMENT 1 - INTRODUCTION TO WEB
+==========================================================
+
+----------------------------------------------------------
+1. Difference between Frontend, Backend, and Full-Stack Development
+----------------------------------------------------------
+
+Frontend Development:
+Frontend is the part of a website that users can see and interact with. It includes the design, layout, buttons, menus, images, and everything visible on the screen.
+
+Technologies Used:
+- HTML
+- CSS
+- JavaScript
+
+Example:
+When we open Amazon, the homepage, search bar, product images, and navigation menu are all part of the frontend.
+
+Backend Development:
+Backend is the part of a website that works behind the scenes. It manages the server, database, business logic, and user authentication.
+
+Technologies Used:
+- Java
+- Python
+- Node.js
+- PHP
+- MySQL
+- MongoDB
+
+Example:
+When a user logs into Amazon, the backend checks the username and password from the database and allows access if the details are correct.
+
+Full-Stack Development:
+A Full-Stack Developer works on both the frontend and backend. They can build an entire web application from the user interface to the database.
+
+Example:
+A developer building a complete e-commerce website like Amazon is working as a full-stack developer.
+
+----------------------------------------------------------
+2. Client-Server Model
+----------------------------------------------------------
+
+              Request
++---------+ -----------------------> +--------------+
+| Browser |                          | Web Server   |
++---------+ <----------------------- +--------------+
+             Response
+
+Explanation:
+1. The browser sends a request to the web server.
+2. The server processes the request.
+3. The server sends the required webpage back to the browser.
+
+----------------------------------------------------------
+3. How a Browser Requests and Displays a Web Page
+----------------------------------------------------------
+
+1. The user enters a website URL in the browser.
+2. The browser sends an HTTP request to the web server.
+3. The server receives the request and processes it.
+4. The server sends HTML, CSS, JavaScript, and other required files.
+5. The browser downloads these files.
+6. The browser renders the files and displays the webpage.
+
+----------------------------------------------------------
+4. Tools Required for Web Development
+----------------------------------------------------------
+
+1. Visual Studio Code (VS Code)
+   Purpose: Used to write and edit HTML, CSS, and JavaScript code.
+
+2. Git
+   Purpose: Used for version control and tracking project changes.
+
+3. GitHub
+   Purpose: Used to store projects online and collaborate with others.
+
+4. Google Chrome
+   Purpose: Used to test websites and inspect web pages.
+
+5. Live Server Extension
+   Purpose: Runs the website locally and automatically refreshes after every change.
+
+6. Node.js
+   Purpose: Used to run JavaScript outside the browser and manage packages.
+
+----------------------------------------------------------
+5. What is a Web Server?
+----------------------------------------------------------
+
+A web server is software or hardware that receives requests from browsers and sends web pages or other resources back to users.
+
+Examples of Web Servers:
+- Apache HTTP Server
+- Nginx
+- Microsoft IIS
+- LiteSpeed
+- Apache Tomcat
+
+----------------------------------------------------------
+6. Roles in a Web Development Project
+----------------------------------------------------------
+
+Frontend Developer:
+- Creates the user interface.
+- Designs responsive web pages.
+- Improves user experience.
+
+Backend Developer:
+- Develops server-side logic.
+- Creates APIs.
+- Connects the application with the database.
+- Handles authentication and security.
+
+Database Administrator (DBA):
+- Designs and manages databases.
+- Performs backup and recovery.
+- Ensures data security.
+- Optimizes database performance.
+
+----------------------------------------------------------
+7. VS Code Setup
+----------------------------------------------------------
+
+Installed Software:
+- Visual Studio Code
+- Live Server Extension
+- Git
+- HTML Support
+- CSS Support
+- JavaScript Support
+
+Screenshot:
+(Attach the screenshot of your VS Code setup.)
+
+----------------------------------------------------------
+8. Difference Between Static and Dynamic Websites
+----------------------------------------------------------
+
+Static Website:
+- The content remains the same for every user.
+- Does not use a database.
+- Loads faster.
+- Easy to create.
+
+Examples:
+- Portfolio Website
+- Company Landing Page
+
+Dynamic Website:
+- The content changes based on user actions or data.
+- Uses a database.
+- More interactive.
+- Requires backend programming.
+
+Examples:
+- Amazon
+- Facebook
+- Instagram
+
+----------------------------------------------------------
+9. Five Web Browsers and Their Rendering Engines
+----------------------------------------------------------
+
+1. Google Chrome – Blink
+2. Microsoft Edge – Blink
+3. Mozilla Firefox – Gecko
+4. Apple Safari – WebKit
+5. Opera – Blink
+
+Difference Between Rendering Engines:
+
+Blink:
+- Fast and efficient.
+- Used in Chrome, Edge, and Opera.
+
+Gecko:
+- Used by Firefox.
+- Focuses on web standards and flexibility.
+
+WebKit:
+- Used by Safari.
+- Optimized for Apple devices.
+
+----------------------------------------------------------
+10. Basic Web Architecture
+----------------------------------------------------------
+
+                User
+                  |
+                  V
+          +----------------+
+          |    Browser     |
+          +----------------+
+                  |
+             HTTP Request
+                  |
+                  V
+          +----------------+
+          |   Web Server   |
+          +----------------+
+                  |
+                  V
+          +----------------+
+          |      APIs      |
+          +----------------+
+                  |
+                  V
+          +----------------+
+          |    Database    |
+          +----------------+
+                  |
+             Response
+                  |
+                  V
+          +----------------+
+          |    Browser     |
+          +----------------+
+
+Explanation:
+
+1. The user requests a webpage using a browser.
+2. The browser sends an HTTP request to the web server.
+3. The server processes the request.
+4. If required, the server communicates with APIs and the database.
+5. The database returns the requested information.
+6. The server sends the response back to the browser.
+7. The browser displays the webpage to the user.
