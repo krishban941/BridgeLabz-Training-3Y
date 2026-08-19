@@ -37,14 +37,14 @@
            .box {
     border: 3px solid rgb(136, 10, 10);
     padding: 20px;
-    margin: 0px auto;
+    margin: 10px 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     background-color: rgb(231, 90, 90);
     text-align: center;
-    display: flex;  
+     
     color: rgb(32, 238, 241);
     font-size: 20px;
-
+    border-radius: 50px;
 }
 .c1{
     border: 3px solid rgb(136, 10, 10);
@@ -66,5 +66,16 @@
     margin: 10px;
     
 }
+.btn{
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 20px;
+    border-width: 10px;
+    margin:10px;
+    cursor:grabbing;
+
+
+}
+
         
  
