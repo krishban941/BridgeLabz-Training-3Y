@@ -1,0 +1,23 @@
+.container{
+    width: 100%;
+    height: 90vh;
+
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(162, 56, 11), rgb(203, 122, 208));
+}
+.b1{
+    background: linear-gradient(to bottom, rgb(255, 234, 0), rgb(255, 51, 0));
+    height: 300px;
+    width: 450px;
+    border-radius: 50%;
+    box-shadow: 30px 16px 50px rgb(2, 0, 0);
+    background-size:cover;
+    background-image: repeating-linear-gradient(12deg, yellow, red,black);
+    box-shadow: 30px 16px 50px rgb(2, 0, 0);
+
+
+   
+
+}
