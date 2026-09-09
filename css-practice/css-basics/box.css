@@ -1,0 +1,23 @@
+* {
+    margin: 100px;
+
+}
+.box {
+    background: linear-gradient(to right, rgb(203, 86, 92), rgb(232, 177, 75));
+    height: 200px;
+    width: 300px;
+
+    animation:1ms box infinite alternate 0s ;
+    margin: 0 auto;
+}
+
+@keyframes box {
+    0%{
+        transform: translateX(90%) rotate(0deg);
+    }
+
+   
+    100% {
+        transform: translateY(100%) rotate(360deg);
+    }
+}

@@ -1,0 +1,28 @@
+.cir{
+   border-top: 15px solid black;
+    height: 400px;
+    width:60%;
+    border-radius:50%;
+    animation:6ms cir linear infinite;
+    margin:0 auto;
+}
+
+@keyframes cir{
+    0%{
+        transform:rotate(0deg);
+    }
+
+
+   
+    100% {
+        transform:rotate(360deg);
+    }
+}
+.cir1{
+   background-color:rgb(66, 61, 61);
+    height: 21px;
+    width:50%;
+    border-radius:60%;
+    margin:0 auto;
+  
+}
