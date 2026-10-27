@@ -11,4 +11,10 @@ text.addEventListener("click", () => {
   text.style.color = colors[colorIndex];
   colorIndex = (colorIndex + 1) % colors.length;
 });
-    
+
+if(item == ""){
+    alert("Please enter a value.");
+}
+
+let userName = "Prashant";
+let currentHour = new Date().getHours(); 

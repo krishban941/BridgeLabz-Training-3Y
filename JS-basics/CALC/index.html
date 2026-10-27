@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background: #eef2f7;
+      color: #172033;
+      font-family: Arial, sans-serif;
+    }
+
+    .calculator {
+      width: min(100% - 32px, 360px);
+      padding: 20px;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 16px 40px rgb(23 32 51 / 15%);
+    }
+
+    .display {
+      min-height: 110px;
+      padding: 20px 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      overflow: hidden;
+      text-align: right;
+      overflow-wrap: anywhere;
+    }
+
+    .previous-operand {
+      min-height: 24px;
+      color: #758096;
+      font-size: 1rem;
+    }
+
+    .current-operand {
+      font-size: clamp(2.5rem, 12vw, 3.5rem);
+      font-weight: 600;
+    }
+
+    .keys {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    button {
+      min-height: 62px;
+      border: 0;
+      border-radius: 14px;
+      background: #f0f3f8;
+      color: #172033;
+      font: inherit;
+      font-size: 1.25rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e2e8f1;
+    }
+
+    button:focus-visible {
+      outline: 3px solid #6b8afd;
+      outline-offset: 2px;
+    }
+
+    .utility {
+      color: #3658c8;
+      background: #e9eeff;
+    }
+
+    .operator {
+      color: #3658c8;
+      background: #edf1ff;
+    }
+
+    .equals {
+      color: #fff;
+      background: #3658c8;
+    }
+
+    .equals:hover {
+      background: #2848b5;
+    }
+
+    .zero {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <main class="calculator" aria-label="Calculator">
+    <div class="display" aria-live="polite" aria-atomic="true">
+      <div class="previous-operand" data-previous-operand></div>
+      <div class="current-operand" data-current-operand>0</div>
+    </div>
+    <div class="keys">
+      <button class="utility" type="button" data-action="clear" aria-label="Clear all">AC</button>
+      <button class="utility" type="button" data-action="delete" aria-label="Delete last digit">DEL</button>
+      <button class="utility" type="button" data-action="percent" aria-label="Percent">%</button>
+      <button class="operator" type="button" data-operator="/" aria-label="Divide">÷</button>
+
+      <button type="button" data-digit="7">7</button>
+      <button type="button" data-digit="8">8</button>
+      <button type="button" data-digit="9">9</button>
+      <button class="operator" type="button" data-operator="*" aria-label="Multiply">×</button>
+
+      <button type="button" data-digit="4">4</button>
+      <button type="button" data-digit="5">5</button>
+      <button type="button" data-digit="6">6</button>
+      <button class="operator" type="button" data-operator="-" aria-label="Subtract">−</button>
+
+      <button type="button" data-digit="1">1</button>
+      <button type="button" data-digit="2">2</button>
+      <button type="button" data-digit="3">3</button>
+      <button class="operator" type="button" data-operator="+" aria-label="Add">+</button>
+
+      <button class="zero" type="button" data-digit="0">0</button>
+      <button type="button" data-action="decimal" aria-label="Decimal point">.</button>
+      <button class="equals" type="button" data-action="equals" aria-label="Equals">=</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
