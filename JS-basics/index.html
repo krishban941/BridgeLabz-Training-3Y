@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Change Text Color</title>
-    <script src="first.js" defer></script>
-  </head>
-  <body>
-    <p id="color-text" style="cursor: pointer;">Click this text to change its color.</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="heading">Hello World</h1>
+
+<button onclick="changeText()">Click Me</button>
+
+<script>
+  function changeText() {
+    document.getElementById("heading").innerHTML =
+      "Welcome to JavaScript";
+  }
+
+</script>
+</body>
 </html>
